@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Glory", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-height: 100dvh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    box-shadow: 0px 0px 2px 2px #32323232;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.header-wrapper {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fbfbfb;
+    border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -ms-border-radius: 6px 6px 0 0;
+    -o-border-radius: 6px 6px 0 0;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.answers-container {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-wrapper {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.1s;
+}
+
+.answer-wrapper.is-checked {
+    background-color: #007bff;
+    color: #fbfbfb;
+}
+
+.answer-wrapper.is-correct {
+    background-color: #28a745;
+    color: #fbfbfb;
+    border-color: #28a745;
+}
+
+.answer-wrapper.is-wrong {
+    background-color: #dc3545;
+    color: #fbfbfb;
+    border-color: #dc3545;
+}
+
+.answer-wrapper:hover {
+    opacity: 0.8;
+}
+
+.btns-container {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.btns-container button {
+    flex: 1;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fbfbfb;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.btns-container button:hover {
+    opacity: 0.8;
+}
+
+.prev-btn {
+    border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    -moz-border-radius: 0 0 0 6px;
+    -ms-border-radius: 0 0 0 6px;
+    -o-border-radius: 0 0 0 6px;
+}
+
+.next-btn {
+    border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    -moz-border-radius: 0 0 6px 0;
+    -ms-border-radius: 0 0 6px 0;
+    -o-border-radius: 0 0 6px 0;
+}
