@@ -17,8 +17,8 @@ class QuizStepper {
         this.length = 0
     }
 
-    addQuestion(title, artist, duration) {
-        const newQuestion = new Question(title, artist, duration)
+    addQuestion(title, answers, correctAnswerIndex) {
+        const newQuestion = new Question(title, answers, correctAnswerIndex)
 
         if (this.head) {
             newQuestion.prev = this.tail
